@@ -1,5 +1,5 @@
 {
-  "name": "netology_nodejs",
+  "name": "counter_books",
   "version": "1.0.0",
   "description": "Сервис 'Подсчет просмотра книг' для курса Нетологии-NodeJS",
   "repository": "https://github.com/Vangiks/netology_counter_books.git",

@@ -3,7 +3,9 @@ const config = require('../../config');
 const { createClient } = require('redis');
 
 const clientRedis = createClient({
-  url: `${config.REDIS_URL}:${config.REDIS_PORT}`,
+  url: `${config.REDIS_URL}${
+    config?.REDIS_PORT ? `:${config?.REDIS_PORT}` : ''
+  }`,
 });
 
 clientRedis.on('error', (error) => console.log('Redis Client Error', error));
