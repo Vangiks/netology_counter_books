@@ -1,9 +1,9 @@
 require('dotenv').config();
 
 const config = {
-  PORT: process.env.PORT || 3000,
-  APP_BASE_PATH: process.env.APP_BASE_PATH || '127.0.0.1',
-  DATABASE_PATH: process.env.DATABASE_PATH || 'database.json',
+  PORT: process.env.PORT || 3002,
+  REDIS_URL: process.env.REDIS_URL || 'redis://host.docker.internal',
+  REDIS_PORT: process.env.REDIS_PORT || '6379',
 };
 
 module.exports = config;
