@@ -9,6 +9,6 @@ COPY package*.json yarn.lock ./
 RUN yarn --frozen-lockfile --prefer-offline
 COPY . .
 
-EXPOSE 3000
+EXPOSE 3002
 
 CMD ["node", "main.js"]
