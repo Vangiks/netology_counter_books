@@ -3,7 +3,7 @@ const config = require('../../config');
 const { createClient } = require('redis');
 
 const clientRedis = createClient({
-  url: `${config.REDIS_URL}${
+  url: `${config.REDIS_HOST}${
     config?.REDIS_PORT ? `:${config?.REDIS_PORT}` : ''
   }`,
 });
